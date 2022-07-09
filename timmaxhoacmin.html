@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let a=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,32,43,54,65,78,89,100];
+    let i=0
+    let max=a[i];
+    let min=a[i]
+    let count1=1 ;let count2=1;
+   while(count1<a.length){
+    i++
+    if(max<a[i]){
+        max=a[i];
+        count1++
+    }
+    else{
+        count1++
+    }
+    continue;
+   }
+   document.write(max+"<br>");
+   i=0
+   while(count2<a.length){
+    i++
+   if(min>a[i]){
+    min=a[i]
+    count2++
+}
+else{
+    count2++
+}
+   }
+   document.write(min)
+</script>
