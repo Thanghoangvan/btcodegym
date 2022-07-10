@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table>
+        <th>
+    <legend>
+        <input type="text" id="01">
+    </legend>
+    </th>
+    <th>
+        <button onclick="mydemo1()">Add</button>
+        <button onclick="mydemo2()">Display</button>
+    </th>
+</table>
+<p id="02"></p>
+</body>
+</html>
+<script>
+    debugger;
+    let x=[]    
+    let y=0
+
+    function mydemo1(){
+        let a=document.getElementById("01").value;
+  x.push(a)
+  y++
+
+    }
+    function mydemo2(){
+        let a=document.getElementById("01").value;
+        for(let i=0;i<=x.length;i=i+1){
+        let z="The element"+ y +"="+a
+     
+        }
+        document.getElementById("02").innerHTML=z
+    }
+
+
+  
+  
+
+</script>

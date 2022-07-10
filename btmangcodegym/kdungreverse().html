@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    debugger;
+        let a=[1,2,3,5,4,6,7,8,9];
+        let i=0;
+       let first=a[i];
+       let last=a[a.length-i-1]
+       while(last>first){
+       
+        let b=last;
+        last=first
+        first=b
+        document.write(b+";")
+        i++
+        first=a[i];
+       last=a[a.length-i-1]
+       continue;
+       }
+
+       while(a[i]>=a[0]){
+       document.write(a[a.length-i-1]+";")
+       
+       i++}
+       </script>
+        
+        
