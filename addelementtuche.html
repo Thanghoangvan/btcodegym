@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-
     <table>
         <th>
     <legend>
@@ -17,33 +16,46 @@
     <th>
         <button onclick="mydemo1()">Add</button>
         <button onclick="mydemo2()">Display</button>
+        <button onclick="mydemo3()">alert x[]</button>
     </th>
 </table>
-<p id="02"></p>
+<p id="02"></p> 
+    
 </body>
 </html>
 <script>
-    debugger;
+
     let x=[]    
-    let y=0
-
+    let y=0;
+    let i=0
     function mydemo1(){
+        
+        // let a=prompt("i")
         let a=document.getElementById("01").value;
+        
   x.push(a)
-  y++
-
+  
+ 
     }
     function mydemo2(){
-        let a=document.getElementById("01").value;
-        for(let i=0;i<=x.length;i=i+1){
-        let z="The element"+ y +"="+a
      
-        }
-        document.getElementById("02").innerHTML=z
+       let a=document.getElementById("01").value;
+       const p=document.createElement("thang");
+       p.innerHTML="The element " + y +"="+ a+"<br>"
+       y++
+      document.getElementById("02").appendChild(p)
     }
+    function mydemo3(){
+        let a=document.getElementById("01").value;
+      const p1=document.createElement("thang");
+      p1.innerHTML=a+";"
+      document.getElementById("02").appendChild(p1)
+     }
+    
 
-
-  
-  
+    
+        
 
 </script>
+  
+
