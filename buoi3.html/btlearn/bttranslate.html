@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Translate</p>
+    <legend>
+        <b>Enter language in English</b>
+        <input type="text" id="01">
+    </legend>
+    <button onclick="mydemo()">Check</button>
+   <p id="02"></p>
+</body>
+</html>
+<script>
+    function mydemo(){
+        debugger;
+        let a=[
+        ["Chuối","Cam","Táo","Nho","Xoài"],
+        ["banana","orange","apple",'mango'],]
+        let x=document.getElementById("01").value;
+        let i=1;
+        for(let j=0;j<5;j++){
+            if(x==a[i][j]){
+             z=a[i-1][j]
+                document.getElementById("02").innerHTML=z;
+                break;
+            }
+        }
+    }
+</script>

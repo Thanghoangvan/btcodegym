@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> -->
+
+         body{
+            width: 50%;
+            size: larger;
+        border: 2px solid;
+        }
+        table{
+            border: 1px solid;
+        }
+      
+            </style>
+</head>
+<body>
+    <table>
+    <th><p><b>CARO GAME</b></p></th>
+   <th><button onclick="mydemo()">Changes values</button></th> 
+    <br>
+    </table>
+    <p id="02"></p>
+
+</body>
+</html>
+<script>
+
+    let cities=[
+        [0,0,0,0,0],
+        [0,0,0,0,0],
+        [0,0,0,0,0],
+        [0,0,0,0,0],
+        [0,0,0,0,0],
+
+    ]
+    let z=0;
+function mydemo(){
+    debugger;
+      
+      let x=+prompt("Enter position oy ");
+      let y=+prompt("Enter position ox ");
+      
+      let a;
+     if(z%2==0){
+        a="x"
+     }
+     else{
+         a="o"
+     }
+     z++
+     cities[x][y]=a
+     let data=''
+     for(let i=0;i<cities.length;i++){
+    for(let j=0;j<cities[i].length;j++){    
+      data+=cities[i][j]
+  }
+data+="<br>"
+}
+document.getElementById("02").innerHTML=data
+
+}
+  
+    
+
+</script>
