@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+
+        body{
+           width: 50%;
+           size: larger;
+       border: 2px solid;
+       }
+       table{
+           border: 1px solid;
+       }
+     
+           </style>
+</head>
+<body>
+    <table>
+    <p>Tic Tac Toe</p>
+   <button onclick="mydemo()">Check</button>
+    <p id="02"></p>
+    </table>
+</body>
+</html>
+<script>
+let a=[
+   [".",".","."],
+   [".",".","."],
+   [".",".","."],
+   [".",".","."],
+   [".",".","."],
+
+]
+
+let b;
+let count1=0
+
+function mydemo(){
+
+    let data="";
+    let x=+prompt("Enter oy")
+    let y=+prompt("Enter ox")
+    let u;
+     if(count1%2==0){
+        u="x"
+     }
+     else{
+         u="o"
+     }
+    count1++
+    a[x][y]=u
+ for(let i=0;i<a.length-1;i++){
+       
+        for(let j=0;j<=a[i].length-1;j++){
+            data+=a[i][j]
+           }
+           data+="<br>"
+          }
+        document.getElementById("02").innerHTML=data;
+    debugger;
+          if(count1>=2){
+  for(i=0;i<a.length-2;i++){
+    for(j=0;j<a[i].length-2;j++){
+       
+            if(a[0][0]==a[0][1]==a[0][2]==u){
+                document.write("End")
+                break;
+            }
+            else if(a[0][0]==a[1][0]==a[2][0]=="x"){
+                document.write("End")
+                break;
+            }
+            else if(a[0][0]==a[0][1]==a[0][2]==u){
+         document.write("The player"+ z + "win")
+                break;
+            }}
+       
+    }}
+  
+  
+}
+ 
+  
+  
+
+
+
+</script>
