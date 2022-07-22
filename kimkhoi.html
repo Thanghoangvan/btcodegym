@@ -4,37 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Document</title>
+    <style>
+        p,b{
+            font-size: larger;
+        }
+    </style>
 </head>
-
-<script>
-    let count = 5
-</script>
-
 <body>
-    <fieldset>
-        <legend>Login</legend>
-        <label for="password_input">Enter password: </label><input type="text" id="password_input"><button type="submit" onclick="enterPassword()">Submit</button><br>
-        <span id="display"></span>
-    </fieldset>
-</body>
-</html>
+   
+</body>  <p><b>Temperature converter</b></p>
+<p>Type a value in Fahrenheit field to convert the value in Celcius</p>
+<legend>
+    <b>Fahrenheit</b>
+    <input type="number" id="01" onchange="mydemo()" >
+</legend>
+&nbsp;
+<legend> 
+    <b>Celcius:</b>
+<p id="02"></p>
+</legend>
 
+</html>
 <script>
     debugger;
-    function enterPassword() {
-        let password = document.getElementById("password_input").value;
-        if (password === "12345") {
-            document.write("Login successfully!");
-        } else {
-            count--
-            if (count === 0) {
-                document.write("Too many attempts. You have been locked out.");
-            } else if (count === 1) {
-                document.getElementById("display").innerHTML = "Enter again - You have " + count + " attempt left.";
-            } else {
-                document.getElementById("display").innerHTML = "Enter again - You have " + count + " attempts left.";
-            }
-        }
-    }
+    function mydemo(){
+  debugger;
+    let a=document.getElementById("01").value;
+   function convert(){
+    return (a-30)/1.8
+   }
+    document.getElementById("02").innerHTML=convert()}
+    
 </script>
